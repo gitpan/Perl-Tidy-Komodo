@@ -1,0 +1,64 @@
+#!/usr/bin/perl
+use strictures;
+
+package perltidy_ko;
+
+our $VERSION = '1.120910'; # VERSION
+
+# ABSTRACT: tidy perl files in Komodo with a project rc
+
+#
+# This file is part of Perl-Tidy-Komodo
+#
+#
+# Christian Walde has dedicated the work to the Commons by waiving all of his
+# or her rights to the work worldwide under copyright law and all related or
+# neighboring legal rights he or she had in the work, to the extent allowable by
+# law.
+#
+# Works under CC0 do not require attribution. When citing the work, you should
+# not imply endorsement by the author.
+#
+
+
+use Perl::Tidy::Komodo;
+
+Perl::Tidy::Komodo->run;
+
+__END__
+=pod
+
+=head1 NAME
+
+perltidy_ko - tidy perl files in Komodo with a project rc
+
+=head1 VERSION
+
+version 1.120910
+
+=head1 DESCRIPTION
+
+Define this script as a formatter in your Komodo preferences. Perl::Tidy
+will then use either .perltidyrc in the same directory as the currently
+open file, or if that does not exist, walk up the directories until it
+finds a .perltidyrc in a directory that also contains a lib directory and
+use that, or if that does not exist defer to Perl::Tidy's inbuilt search
+algorithms.
+
+=head1 AUTHOR
+
+Christian Walde <walde.christian@googlemail.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+
+Christian Walde has dedicated the work to the Commons by waiving all of his
+or her rights to the work worldwide under copyright law and all related or
+neighboring legal rights he or she had in the work, to the extent allowable by
+law.
+
+Works under CC0 do not require attribution. When citing the work, you should
+not imply endorsement by the author.
+
+=cut
+

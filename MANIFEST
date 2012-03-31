@@ -1,0 +1,22 @@
+'corpus/lib/dir with space/test.pl'
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+README.PATCHING
+bin/perltidy_ko
+dist.ini
+lib/Perl/Tidy/Komodo.pm
+perlcritic.rc
+t/00-compile.t
+t/basic.t
+xt/author/critic.t
+xt/author/pod-spell.t
+xt/release/distmeta.t
+xt/release/pod-coverage.t
+xt/release/pod-syntax.t
+xt/release/portability.t
+xt/release/test-version.t
